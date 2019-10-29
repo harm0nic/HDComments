@@ -1,0 +1,193 @@
+/*
+Theme Name:
+Theme URI: https://harmonicdesign.ca
+Author: Harmonic Design
+Author URI: https://harmonicdesign.ca
+Description:
+*/
+
+#hdcomments {
+  border: 1px solid #eee;
+  padding: 40px;
+  margin: 20px 0;
+}
+
+#hdcomments *,
+#hdcomments *:before,
+#hdcomments *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#hdcomments_comment_contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 40px;
+  margin-top: 20px;
+}
+
+#hdcomments_comment_footer {
+  display: grid;
+  grid-template-columns: 1fr 80px;
+  align-items: center;
+}
+
+#hdcomments_comment_footer.hdcomments_no_reactions {
+  grid-template-columns: 1fr;
+}
+
+#hdcomments_notice {
+  display: none;
+  padding: 22px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+#hdcomments_reaction_title {
+  display: inline-block;
+}
+
+.hdcomments_reaction {
+  padding: 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.hdcomments_reaction:hover {
+  border: 1px solid #ccc;
+}
+
+.hdcomments_reaction_selected {
+  border: 1px solid #999;
+}
+
+.hdcomments_label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.hdcomments_input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+}
+
+#hdcomments_submit {
+  background: #222;
+  padding: 12px 16px;
+  color: #fff;
+  border: none;
+  opacity: 0.4;
+}
+
+.hdcomments_submit_enabled {
+  opacity: 1 !important;
+}
+
+.hdcomments_remove_reply {
+  margin-left: 8px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: red;
+  display: inline-block;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.hdcomments_remove_reply:hover {
+  opacity: 1;
+}
+
+.hdcomments_reply_link {
+  margin-right: 12px;
+  display: inline-block;
+  font-size: 0.8rem;
+}
+
+#hdcomments_comments {
+  margin-top: 40px;
+}
+
+.hdcomment {
+  border: 1px solid #eee;
+  border-bottom: 3px solid #ccc;
+  padding: 20px;
+  margin-bottom: 12px;
+}
+
+.hdcomments_comment p:first-child {
+  margin-top: 0;
+}
+
+.hdcomments_meta {
+  display: grid;
+  grid-template-columns: 1fr 80px;
+  align-items: center;
+}
+
+.hdcomments_meta.hdcomments_no_votes {
+  grid-template-columns: 1fr;
+}
+
+.hdcomments_meta_date_author {
+  font-size: 0.85rem;
+}
+
+.hdcomments_meta_author {
+  margin-left: 22px;
+  font-weight: bold;
+}
+
+.hdcomment_post_author .hdcomments_meta_author {
+  background: rgba(255, 215, 0, 0.6);
+  padding: 4px 12px;
+  border-radius: 6px;
+}
+
+.hdcomments_vote {
+  text-align: right;
+  display: grid;
+  grid-template-columns: 1fr 20px;
+  align-items: center;
+}
+
+.hdcomments_vote_options {
+  display: grid;
+  grid-auto-columns: 1fr;
+}
+
+.hdcomments_upvote,
+.hdcomments_downvote {
+  cursor: pointer;
+}
+
+.hdcomments_vote_disabled {
+  cursor: default;
+  opacity: 0.2;
+}
+
+.hdcomments_vote_selected {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.hdcomments_upvote.hdcomments_vote_selected {
+  color: green;
+}
+
+.hdcomments_downvote.hdcomments_vote_selected {
+  color: red;
+}
+
+
+@media (max-width: 800px){
+	#hdcomments {
+		padding: 20px;
+	}
+	
+	.hdcomment{
+		padding: 20px
+	}
+}	
